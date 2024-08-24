@@ -1,0 +1,31 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="container">
+  <div>
+    <h1 class="title">Calculator</h1>
+    <app-calc-view  (nro1)="recibeNro1($event)" (nro2)="recibeNro2($event)" [res]="result"/>
+  </div>
+    <hr class="separador">
+  <div>
+    <app-calc-actions [n1]="nro1"  [n2]="nro2" (rst)="recibeResultado($event)"/>
+  </div>
+</div>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
